@@ -25,4 +25,5 @@ import Route from '@ioc:Adonis/Core/Route'
 // Route.post('/data','UsersController.store')
 Route.get('/data2','UsersController.show')
 Route.delete('/delete','UsersController.destroy')
-
+Route.patch('/edit','UsersController.edit')
+Route.get('/index','UsersController.index')
