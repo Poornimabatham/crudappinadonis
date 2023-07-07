@@ -22,8 +22,28 @@ import Route from '@ioc:Adonis/Core/Route'
 
 
 
-// Route.post('/data','UsersController.store')
-Route.get('/data2','UsersController.show')
-Route.delete('/delete','UsersController.destroy')
-Route.patch('/edit','UsersController.edit')
-Route.get('/index','UsersController.index')
+// Route.get('/data2','UsersController.getSelectedEmployeeShift')
+// Route.get('/test/8',async()=>{
+// return 'working'})
+// Route.on('/testing').redirectToPath('https://duckduckgo.com/')
+// Route.get('/Post/:id',async({params})=>
+// {
+    // return`get a single post an id of ${params.id}`}).where('id',/^[0-9]+$/)
+
+
+    // Route.get('/Post/:id',async({params})=>
+// {
+    // return`get a single post an id of ${params.id}`}).where('id',Route.matchers.number())
+
+
+    
+    
+//     Route.get('/Post/topics/:topic?',async({params})=>
+// {
+//     return`get a single post an id of ${params.topic}`}).where('topic',Route.matchers.slug())
+
+
+    Route.get('/Post/:id',async({params})=>
+{
+    return`get a single post an id of ${params.id}`}).where('id',Route.matchers.number())
+

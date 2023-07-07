@@ -1,5 +1,4 @@
 import { afterSave, BaseModel,beforeSave, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
-import Post from './Post';
 import Hash from '@ioc:Adonis/Core/Hash'
 
 export default class Post2 extends BaseModel {
@@ -34,8 +33,6 @@ export default class Post2 extends BaseModel {
 
   
 
-@belongsTo(()=> Post)
-public post:BelongsTo<typeof Post>
 
 
 
